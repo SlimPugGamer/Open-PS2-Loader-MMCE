@@ -791,7 +791,7 @@ static int checkLoadConfigBDM(int types)
     int value;
 
     // check USB
-    if (bdmFindPartition(path, "conf_opl.cfg", 0)) {
+    if (bdmFindPartition(path, "conf_oplmmce.cfg", 0)) {
         configEnd();
         configInit(path);
         value = configReadMulti(types);
@@ -811,7 +811,7 @@ static int checkLoadConfigHDD(int types)
     hddLoadModules();
     hddLoadSupportModules();
 
-    snprintf(path, sizeof(path), "%sconf_opl.cfg", gHDDPrefix);
+    snprintf(path, sizeof(path), "%sconf_oplmmce.cfg", gHDDPrefix);
     value = open(path, O_RDONLY);
     if (value >= 0) {
         close(value);
@@ -1017,7 +1017,7 @@ static int trySaveConfigBDM(int types)
     char path[64];
 
     // check USB
-    if (bdmFindPartition(path, "conf_opl.cfg", 1)) {
+    if (bdmFindPartition(path, "conf_oplmmce.cfg", 1)) {
         configSetMove(path);
         return configWriteMulti(types);
     }
