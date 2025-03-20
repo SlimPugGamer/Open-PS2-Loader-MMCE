@@ -92,6 +92,22 @@ Repeat it once you faced defragmenting problem again.
 </details>
 
 <details>
+  <summary> <b> MMCE </b> </summary>
+
+
+Game files should be *ideally* defragmented either file by file or by whole drive,
+and for games bigger than 4GB use exFAT (32KB clusters)
+We do **not** recommend using any defrag programs. The best way for defragmenting - copy all files to pc, format SD, copy all files back.
+Repeat it once you faced defragmenting problem again.
+
+> NOTE: MMCE requires a recent sd2psxTd firmware (if using a SD2PSX based MMCE) or a recent MemCard Pro 1/2 firmware (if using MemCard Pro 1/2)
+> NOTE: partial file fragmentation is supported (up to 64 fragments!) since OPL v1.2.0 - rev1893
+
+
+</p>
+</details>
+
+<details>
   <summary> <b> SMB </b> </summary>
 <p>
 
